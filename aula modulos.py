@@ -18,6 +18,6 @@ print(' A raiz de {} é igual a {} ' .format(num, math.floor(raiz))) #arredondam
 
 import emoji # para instalar a biblioteca digitei pip install emoji no terminal do vscode aqui mesmo
 
-
+#print(emoji.emojize(' Ola mundo :sunglasses:', use_aliases=True))
 
 
