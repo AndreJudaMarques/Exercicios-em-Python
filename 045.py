@@ -23,24 +23,24 @@ while True:
     #player emojis
     if player == 1:
         playerEmoji = emoji.emojize(':raised_fist:')
-        print(player, playerEmoji)
+        print('Você escolheu {} ' .format(player), playerEmoji)
     elif player == 2:
         playerEmoji = emoji.emojize(':raised_hand:')
-        print(player, playerEmoji)
+        print('Você escolheu {} ' .format(player), playerEmoji)
     elif player == 3:
         playerEmoji = emoji.emojize(':victory_hand:')
-        print(player, playerEmoji)
+        print('Você escolheu {} ' .format(player), playerEmoji)
 
     #pc emojis
     if pc == 1:
         pcEmoji = emoji.emojize(':raised_fist:')
-        print(pc, pcEmoji)
+        print('O PC escolheu {} '.format(pc), pcEmoji)
     elif pc == 2:
         pcEmoji = emoji.emojize(':raised_hand:')
-        print(pc, pcEmoji)
+        print('O PC escolheu {} '.format(pc), pcEmoji)
     elif pc == 3:
         pcEmoji = emoji.emojize(':victory_hand:')
-        print(pc, pcEmoji)
+        print('O PC escolheu {} '.format(pc), pcEmoji)
 
 
     #quem ganhou
