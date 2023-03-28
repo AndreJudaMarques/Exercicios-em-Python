@@ -7,8 +7,8 @@ pygame.init()
 
 # Definindo as dimensões da tela
 width, height = 640, 480
-#screen = pygame.display.set_mode((width, height))
-screen = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
+screen = pygame.display.set_mode((width, height))
+#screen = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
 
 
 # Definindo a lista de caracteres

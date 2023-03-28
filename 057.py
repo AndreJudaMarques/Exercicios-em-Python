@@ -16,4 +16,4 @@ while sexo != 'M' or sexo != 'F':
         break
 
     ''' enquanto o valor digitado for diferente de M ou F
-    pergunta sexo de novo'''
+    pergunta sexo de novo '''

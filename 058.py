@@ -5,7 +5,6 @@ from random import randint
 
 from time import sleep
 
-numeroPC = randint(1,10)
 
 #print(numeroPC) teste
 
@@ -25,7 +24,9 @@ sleep(2)
 print('pensando.....')
 sleep(3)
 print()
-print('Escolhi, agora tente adivinhar 1-10:')
+print('Escolhi, agora tente adivinhar 1-9:')
+
+numeroPC = randint(1,10)
 
 numero = int(input())
 cont = 1
