@@ -1,6 +1,9 @@
 ''' mostrar fatorial numero 
 5! = 5x4 5x3 5x2 5x 1 = 120'''
 
+#existe a opcao from math import factorial 
+#so depois que eu vi
+
 print('Digite um numero para verificar seu fatorial !')
 
 numero = int(input('--->: '))
