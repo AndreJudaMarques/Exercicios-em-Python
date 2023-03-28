@@ -26,13 +26,14 @@ while condicao:
         print('A soma do {} + {} = {} ' .format(n1, n2, n1+n2))
         print()
         #sleep(1)
+        qualquerCoisa = input('Digite qualquer coisa para sair...')
         break
-        #sair = input('Digite qualquer coisa para sair...')
          
     elif e == 2:
         print()
         print('A multiplicação do {} x {} = {} ' .format(n1, n2, n1*n2))
         print()
+        qualquerCoisa = input('Digite qualquer coisa para sair...')
         break
 
     elif e == 3:
@@ -41,6 +42,7 @@ while condicao:
         else:
             print('O maior número é o {} ' .format(n2))
         print()
+        qualquerCoisa = input('Digite qualquer coisa para sair...')
         break
 
     elif e == 4:
