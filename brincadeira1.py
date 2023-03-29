@@ -6,7 +6,8 @@ import random
 pygame.init()
 
 # Definindo as dimensões da tela
-width, height = 640, 480
+#width, height = 640, 480
+width, height = 800, 600
 screen = pygame.display.set_mode((width, height))
 #screen = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
 
@@ -40,7 +41,7 @@ class Character:
 
 # Cria a lista de caracteres
 n_chars = 50 # Número de caracteres na tela
-characters = [Character(random.randint(0, width), random.randint(0, height), 2) for i in range(n_chars)]
+characters = [Character(random.randint(0, width), random.randint(0, height), 0.5) for i in range(n_chars)]
 
 # Loop principal do programa
 while True:
