@@ -34,5 +34,6 @@ else:
         #agora o problema esta na matematica
     print()
 print()
+final = input('Digite qualquer coisa para sair... ')
 
     
