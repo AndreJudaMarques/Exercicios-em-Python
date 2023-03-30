@@ -6,8 +6,8 @@ import random
 pygame.init()
 
 # Definindo as dimensões da tela
-#width, height = 640, 480
-width, height = 800, 600
+width, height = 640, 480
+#width, height = 800, 600
 screen = pygame.display.set_mode((width, height))
 #screen = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
 
