@@ -13,22 +13,33 @@ f1  f2  resultado
 3 + 2 = 5           | resultado = resultado + f2
 5 + 3 = 8           | resultado + f2 = resultado'''
 
-numero = int(input("Digite um numero: "))
+print('-_-' * 10)
+print('Sequencia Fibonacci')
+print("Digite a quantidade de numeros que gostaria de ver: ")
+numero = int(input('--->: '))
 
-cont = 1
+cont = 2
 
 f1 = 1
 f2 = 1
 
 resultado = 0
 
-while cont < numero:
-    print(f1,f2, end=' ') #saindo:  1
+#while cont < numero:
+    #print(f1,f2, end=' ') #saindo:  1
+if numero == 1:
+    print(f1)
+
+elif numero == 2:
+    print(f1,f2)
+
+else:
+    print(f1,f2, end=' ') 
     while cont < numero:        
         cont += 1
         resultado = f1 + f2 #=2
         f2 = f1 #1
-        f1 = resultado #=2        
+        f1 = resultado #=2
         print(resultado, end=' ')
 
 
