@@ -35,7 +35,7 @@ total = preco
 
 precoAnterior = preco
 
-produtoMaisBarato = ''
+produtoMaisBarato = produto
 
 while continuar == 'S':
     produto = input('Nome do produto: ')
@@ -48,6 +48,7 @@ while continuar == 'S':
 
     if preco < precoAnterior:
         produtoMaisBarato = produto
+
     if preco > 1000:
         caro += 1
     total = total + preco
@@ -61,7 +62,6 @@ print(f'-O total da compra foi {total:.2f}\n-Temos {caro} produtos custando mais
 print()
 
 sair = input('Digite qualquer coisa para sair... ')
-
 
 '''' se preco < preco anterior 
 baratoProduto = produto'''
