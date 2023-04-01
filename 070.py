@@ -46,11 +46,12 @@ while continuar == 'S':
         except ValueError:
             print('Inválido, tente novamente...')
 
+    if preco > 1000:
+        caro += 1        
+
     if preco < precoAnterior:
         produtoMaisBarato = produto
-
-    if preco > 1000:
-        caro += 1
+    
     total = total + preco
     baratopreco.append(preco) # salva todos preços na lista, no print joga o menor
     
