@@ -10,7 +10,7 @@ o restante sera dividido por outras cedulas'''
 
 titulo = 'BANCO PRO'
 print('===' * 15)
-print(f'\033[33m{titulo:^40}\33[m')
+print(f'\033[31m{titulo:^40}\33[m')
 print('===' * 15)
 
 valor = int(input('Que valor você quer sacar R$: '))

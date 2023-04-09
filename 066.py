@@ -21,5 +21,17 @@ while numero != 999:
     cont += 1
 print()
 lista.pop()
-print('O resultado da soma dos números digitados é = {} '.format(sum(lista)))
+print(f'O resultado da soma dos {cont} números digitados é = {sum(lista)}')
 print()
+
+
+''' solucao video:
+soma = cont = 0
+while true:
+    n = input(digite numero)
+    if numero == 999:
+        break
+    cont +=1
+    soma += numero
+    
+print(f'A soma dos {cont} valores foi {soma}')'''
