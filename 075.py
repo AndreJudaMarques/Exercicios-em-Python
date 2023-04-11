@@ -12,13 +12,13 @@ print()
 numeros = []
 
 contLoop = 0
-cont9 = 0
+#cont9 = 0
 contPar = []
 
 while contLoop < 4:
     numero = int(input('Digite um número: '))
-    if numero == 9:
-        cont9 += 1
+    #if numero == 9:
+        #cont9 += 1
     if numero % 2 == 0:
         contPar.append(numero)
     numeros.append(numero)
@@ -26,7 +26,7 @@ while contLoop < 4:
 
 print()
 print(f'Você digitou os valores: {numeros}')
-print(f'-O valor 9 apareceu {cont9}')
+print(f'-O valor 9 apareceu {numeros.count(9)}')
 if numero == 3:
     print(f'-O número 3 apareceu na {numeros.index(3)+1}º posição')
 else:
