@@ -1,10 +1,6 @@
 '''criar matrix 3x3
 linhas e colunas
 mostrar na tela com formatacao correta
-
-0 
-1
-2  0 1 2 
 [[1] [2] [3] 
 [4] [5] [6]
 [7] [8] [9]]  '''
@@ -44,3 +40,10 @@ cont= 0
 for i in matriz:
     print(f'{matriz[cont]}')
     cont+= 1
+
+    #explicação
+    #fiz uma matriz com a linha 0 e coluna 0
+      #coluna  
+    #linha0  0  1  2
+    #linha1  0  1  2
+    #linha2  0  1  2
