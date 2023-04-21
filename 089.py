@@ -49,8 +49,6 @@ while True:
     NumeroDoAluno = int(input('Digite o Número° do aluno para mostrar suas notas ou 999 para PARAR: '))
     if NumeroDoAluno == 999:
         break
-    if NumeroDoAluno not in boletim:
-        NumeroDoAluno = int(input('Digite o Número° do aluno para mostrar suas notas ou 999 para PARAR: '))
     print(f'As notas de {boletim[NumeroDoAluno][0]} são {boletim[NumeroDoAluno][1:3]}') 
     print('---' * 9)
 
