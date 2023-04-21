@@ -1,4 +1,4 @@
-
+'''
 cont = 0
 
 matriz = []
@@ -14,10 +14,15 @@ for linha in range(0,1):
 matriz.append(linha1)
 
 print(matriz[0])
-
+'''
 '''cont = 0
 for i in matriz:
     print(matriz[cont], end=' ')
     cont += 1
-'''
-    
+'''''''''
+import random
+
+numero = random.sample(range(1, 60), 6)
+
+print(numero)
+
