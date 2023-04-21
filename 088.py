@@ -14,12 +14,15 @@ print('---' * 15)
 
 import random
 
+from time import sleep
+
 jogos = int(input('Quantos jogos você quer que eu sorteie? '))
 print('-=-' * 2, f'SORTEANDO {jogos} JOGOS', '-=-' * 2)
 
 for i in range(0, jogos):
     numero = random.sample(range(1,60), 6)
     print(f'Jogo {i+1}: {numero}')
+    sleep(0.7)
   
 print('-=-' *5, '< BOA SORTE! >', '-=-' *5)
 print()
