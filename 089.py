@@ -35,7 +35,6 @@ while True:
     continuar = input('Quer continuar?[S/N]: ').lower()
     if continuar == 'n':
         break
-print(boletim)
 
 print('-=-' * 8 )
 print('Nº. Nome       Média')
