@@ -2,7 +2,7 @@
 cadastrar em lista unica
 separar pares e impares em outras listas dentro dessa unica lista'''
 
-numeros = []
+'''numeros = []
 pares = []
 impares = []
 
@@ -23,4 +23,19 @@ pares.sort()
 impares.sort()
 print(numeros)
 print(f'Os valores pares digitados foram {pares}')
-print(f'Os valores ímpares digitados foram {impares}')
+print(f'Os valores ímpares digitados foram {impares}')'''
+
+#solucao com 1 lista abaixo
+
+lista = [[], []]
+for n in range(1,8):
+    numero = int(input(f'Digite o {n} numero: '))
+    if numero % 2 == 0 :
+        lista[0].append(numero)
+    else:
+        lista[1].append(numero)
+print()
+lista.sort()
+print(f'Os numeros digitados foram {lista}')
+print(f'Os valores pares são {lista[1]}')
+print(f'Os valores ímpares são {lista[0]}')
