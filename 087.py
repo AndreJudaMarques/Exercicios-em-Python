@@ -2,7 +2,7 @@
 a soma dos valores da 3 coluna
 e o maior da segunda linha'''
 
-matriz = []
+'''matriz = []
 
 linha1 = []
 linha2 = []
@@ -53,4 +53,33 @@ print(f'A terceira coluna é {terceira}')
 print(f'A soma dos valores da terceira coluna é {sum(terceira)} ')
 print(f'O maior valor da segunda linha é {max(linha2)}')
 print()
-sair = input('Aperte ENTER para sair...')
+sair = input('Aperte ENTER para sair...')'''
+
+matriz = [ [0, 0, 0], [0, 0, 0], [0, 0, 0] ]
+somapar = maior = somacol = 0
+
+for l in range(0, 3): #linha
+    for c in range(0, 3): #coluna
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
+
+print('-=-' *15)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end='') #:^5  faz o print ficar centrlizado
+        if matriz[l][c] % 2 == 0:
+            somapar += matriz[l][c]
+
+    print()
+print('-=-' *15)
+print(f'A soma dos valores pares é: {somapar}')
+for l in range(0, 3):
+    somacol += matriz[l][2] #coluna fixa
+print(f'A soma da 3º coluna é: {somacol}')
+for c in range(0, 3):
+    if c ==0:
+        maior = matriz[1][c]
+    elif matriz[1][c] > maior:
+        maior = matriz[1][c]
+print(f'O maior valor da segunda linha é {maior}')
+print()
+

@@ -3,7 +3,7 @@ linhas e colunas
 mostrar na tela com formatacao correta
 [[1] [2] [3] 
 [4] [5] [6]
-[7] [8] [9]]  '''
+[7] [8] [9]]  
 
 #matriz = [ [1], [2], [3]] 
 matriz = []
@@ -46,4 +46,16 @@ for i in matriz:
       #coluna  
     #linha0  0  1  2
     #linha1  0  1  2
-    #linha2  0  1  2
+    #linha2  0  1  2'''
+
+matriz = [ [0, 0, 0], [0, 0, 0], [0, 0, 0] ]
+
+for l in range(0, 3): #linha
+    for c in range(0, 3): #coluna
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
+
+print('-=-' *15)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end='') #:^5  faz o print ficar centrlizado
+    print()
