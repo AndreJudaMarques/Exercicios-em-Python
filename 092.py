@@ -21,19 +21,18 @@ print(dici)
 idade = datetime.today().year - anonascimento
 
 print(f'Nome tem o valor {dici["nome"]}')
-print(f'Idade tem o valor {idade}') ###arrumar este
+print(f'Idade tem o valor {idade}') 
 if ctps != 0:
     print(f'ctps tem o valor {dici["carteira"]}')
     print(f'contratação tem o valor {dici["ano de contratação: "]}')
     print(f'salário tem o valor {dici["salário: "]}')
-
+    contribuicao = datetime.today().year - anocontrato
+    if contribuicao < 35:
+       print(f'você ainda tem {35 - contribuicao} anos de contribuição')
+    else:
+        print(f'Você já pode se aposentar ')
 #aposentadoria depois de 35 anos de colaboração
 #ano de contratação + 35 anos
-
-contribuicao = datetime.today().year - anocontrato
-
-if contribuicao < 35:
-    print(f'você ainda tem {35 - contribuicao} anos de contribuição')
 else:
-    print(f'Você já pode se aposentar ')
+    print(f'ctps tem o valor {dici["carteira"]}')
 print()
