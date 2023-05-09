@@ -47,6 +47,10 @@ while True:
     if mostrar == 999:
         print('Finalizando')
         break
+
+    if mostrar > len(nomes):
+        print(f'Erro! Não existe jogador com o código {mostrar}! Tente novamente')
+  
     else:
         print(f'-- LEVANTAMENTO DO JOGADOR {nomes[mostrar]}')
         jogo = 1
