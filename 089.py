@@ -9,7 +9,7 @@ e dentro outra lista menor'''
 e permita que o usuario possa mostrar as notas individualmente'''
 from time import sleep
 
-'''boletim = []
+boletim = []
 
 alunos = []
 
@@ -55,11 +55,11 @@ while True:
 print('FINALIZANDO...')
 sleep(1)
 print('<<< VOLTE SEMPRE >>>')
-enter = input('Tecle ENTER para sair... ')'''
+enter = input('Tecle ENTER para sair... ')
 
 #solucao video abaixo
 
-boletim = []
+'''boletim = []
     
 while True:
     nome = input('Nome: ')
@@ -85,4 +85,4 @@ while True:
         print(f'Notas de {boletim[opc][0]} são {boletim[opc][1]}')   
 print('Volte Sempre! ')
 print()
-
+'''
