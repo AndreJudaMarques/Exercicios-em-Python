@@ -31,10 +31,15 @@ def contagem3(inicio, fim, passo):
             while inicio <= fim:
                 print(inicio, end=' ')
                 inicio = inicio + passo
-    elif inicio > fim:
+    elif inicio > fim and passo > 0:
          while inicio >=fim:
               print(inicio, end=' ')
               inicio = inicio - passo
+    elif inicio > fim and passo < 0:
+            while inicio > fim:
+                print(inicio, end=' ')
+                inicio = inicio - passo
+              
     print('FIM! ')
 
 contagem(1,10,1)
