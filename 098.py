@@ -27,18 +27,39 @@ def contagem3(inicio, fim, passo):
     inicio = int(input('Início: '))
     fim = int(input('Fim: '))
     passo = int(input('Passo: '))
-    if inicio < fim:
-            while inicio <= fim:
-                print(inicio, end=' ')
-                inicio = inicio + passo
-    elif inicio > fim and passo > 0:
-         while inicio >=fim:
+    if passo < 0:
+         linha()
+         print(f'Contagem de {inicio} até {fim} de 1 em 1')
+         while inicio >= fim:
               print(inicio, end=' ')
-              inicio = inicio - passo
-    elif inicio > fim and passo < 0:
-            while inicio > fim:
+              inicio = inicio + passo # - com + da menos
+    
+    elif passo == 0:
+        linha()
+        print(f'Contagem de {inicio} até {fim} de 1 em 1')
+        if inicio > fim:
+            while inicio >= fim:
+                print(inicio, end=' ')
+                inicio -= 1
+        else:
+            while inicio <= passo:
+                print(inicio, end=' ')
+                inicio += 1
+
+    else:    
+        if inicio < fim:
+                linha()
+                print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+                while inicio <= fim:
+                    print(inicio, end=' ')
+                    inicio = inicio + passo
+        elif inicio > fim and passo > 0:
+            linha()
+            print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+            while inicio >=fim:
                 print(inicio, end=' ')
                 inicio = inicio - passo
+    
               
     print('FIM! ')
 
