@@ -1,4 +1,4 @@
-def exibir_titulo():
+def sistemaDeAjuda():
     from time import sleep
     titulo = " Sistema de Ajuda PyHelp "
     cor_fundo_amarelo = "\033[48;2;255;255;0m"
@@ -15,6 +15,7 @@ def exibir_titulo():
         comando = input('Função ou Biblioteca > ')
         if comando == 'fim':
             print(f'{cor_fundo_rosa}ATÉ LOGO!{resetar_formato}')
+            print()
             break
         else:
             acessando = f"Acessando o manual do comando '{comando}'"
@@ -27,11 +28,7 @@ def exibir_titulo():
             print(f'{cor_fundo_branco} {help(comando)} {resetar_formato}')
             print(f"")
         
-
-
-    
-
-exibir_titulo()
+sistemaDeAjuda()
 
 
 #help(print)
